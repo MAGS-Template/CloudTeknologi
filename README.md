@@ -6,8 +6,7 @@ Man kan se kurset her - [Notion CloudTeknologi](https://mercantec.notion.site/Cl
 Vores repository her et støttende til kurset og indeholder 5 centrale mapper
 |  Mappe  |  Beskrivelse  |
 |  --- |  ---  |
-|  [PythonOpstart](/PythonOpstart)  |  Her er opgaverne og dokumentation til første del af Python |
-|  [PythonEksempler](/PythonEksempler)  |  Her har vi eksempler fra Cisco DevNet, hvis vi for forbindelse til udstyr med Python  |
+|  [Python](/Python)  | Her er eksempler både til basis Python og programmering, samt eksempler fra Cisco DevNet, hvor vi for forbindelse til vores udstyr med Python  |
 |  [Docker & Kubernetes](/Docker&K8s)  | Cloud bygger på software som Docker og Kubernetes, her er der lidt eksempler til brug i kurset |
 |  [Ansible](/Ansible)  | Vi bruger Ansible til at konfiguere vores udstyr, her er der eksempler til opstart |
 |  [Terraform](/Terraform)  |  Terraform er en anden vigtig tekonolgi, når vi har med Cloud at gøre og specielt IaC |
