@@ -1,38 +1,38 @@
-# Network Automation with Python Code Samples
+# Netværksautomatisering med Python Kodeeksempler
+Fra [Cisco-DevNet](https://github.com/CiscoDevNet)
 
-A collection of Python Code Samples for Network Management.  Includes samples that leverage on-box libraries, as well as samples that use exposed external APIs (NETCONF/RESTCONF, SNMP, SSH, REST, etc).  Some examples make use of available SDKs.  
+En samling af Python Kodeeksempler til Netværksstyring. Indeholder eksempler, der udnytter on-box biblioteker, såvel som eksempler, der bruger eksterne API'er (NETCONF/RESTCONF, SNMP, SSH, REST osv.). Nogle eksempler bruger tilgængelige SDK'er. Vi kommer ikke til at gå igennem alle eksempler, da vi hurtigt går videre til Ansible og Terraform. Dog er det meget det samme koncepter som bliver brugt! 
 
-## On-Box Examples
+## On-Box Eksempler
 
-Many Cisco switches and routers provide an on-box Python Interpreter that can be leveraged to execute scripts and programs directly on end devices.  In addition to the interpreter, Python libraries are included that provide direct access to the underlying devices operations to execute CLI commands, or monitor for events.  
+Mange Cisco-switches og routere har en on-box Python Interpreter, der kan udnyttes til at køre scripts og programmer direkte på slutenhederne. Ud over Interpreteren inkluderes Python-biblioteker, der giver direkte adgang til enhedens underliggende drift for at udføre CLI-kommandoer eller overvåge events.
 
-### Sample Code
+### Kodeeksempler
 
-|  Code Sample  |  Description  |
+|  Kodeeksempel  |  Beskrivelse  |
 |  --- |  ---  |
-|  [Execute CLI via Python](/PythonEksempler/Py-sho-ver-onbox)  |  This example is about as simple as it gets. By leveraging the CLI library, we execute the “show version” command on the box. |
-|  [TDR Test Every Interface](/PythonEksempler/tdr-test)  |  This example once again leverages the CLI library, but to do something a bit more interesting.  A TDR test is run on every interface in “up” status.  |
-|  [EEM Config Changes to Spark](/PythonEksempler/eem_configdiff_to_spark)  |  In this example, the EEM library is used to monitor for configuration changes.  When one occurs a message is sent to a Cisco Spark Room.  |
-|  [Python with Eventing Example](/PythonEksempler/EEM-interface-move-routes)  |  Use the EEM and Python together to script based on local events. |
-|  [EEM + Python + Spark ChatOps](/PythonEksempler/spark_checkin)  |  Use the EEM to monitor for config changes and send a Spark Message |  
-|  [EEM + Python + Email alert](/PythonEksempler/PortFlap_email_alert)  |  This example leverages the CLI library and using the EEM feature to monitor for interface flapping and send an email alert |
+|  [Udfør CLI via Python](/PythonEksempler/Py-sho-ver-onbox)  |  Dette eksempel er så simpelt som det bliver. Ved at udnytte CLI-biblioteket udfører vi kommandoen "show version" på enheden. |
+|  [TDR Test på Alle Interface](/PythonEksempler/tdr-test)  |  Dette eksempel udnytter igen CLI-biblioteket, men for at gøre noget lidt mere interessant. Der udføres en TDR-test på alle grænseflader i "op" status.  |
+|  [EEM Konfigurationsændringer til Spark](/PythonEksempler/eem_configdiff_to_spark)  |  I dette eksempel bruges EEM-biblioteket til at overvåge konfigurationsændringer. Når en ændring opstår, sendes en besked til et Cisco Spark-rum.  |
+|  [Python med Eventing Eksempel](/PythonEksempler/EEM-interface-move-routes)  |  Brug EEM og Python sammen til at scripte baseret på lokale begivenheder. |
+|  [EEM + Python + Spark ChatOps](/PythonEksempler/spark_checkin)  |  Brug EEM til at overvåge konfigurationsændringer og send en Spark-besked |  
+|  [EEM + Python + E-mail alarm](/PythonEksempler/PortFlap_email_alert)  |  Dette eksempel udnytter CLI-biblioteket og bruger EEM-funktionen til at overvåge grænseflade-flappende og sende en e-mailalarm |
 
+## Off-Box Eksempler
 
-## Off-Box Examples
+Her er nogle Python-scripts, der kan interagere med netværkselementer ved hjælp af en af de mange eksponerede interfaces (NETCONF, RESTCONF, SNMP, SSH osv.). Mange af disse scripts kan også køres on-box, men de udnytter ikke nogen af de unikke biblioteker, der er tilgængelige på enheden.
 
-Here are few Python scripts that can interact with network elements using one of the many exposed interfaces (NETCONF, RESTCONF, SNMP, SSH, etc).  Many of these scripts could also be run on-box, however they don’t leverage any of the unique libraries available on device.  
-
-|  Code Sample  |  Description  |
+|  Kodeeksempel  |  Beskrivelse  |
 |  --- |  ---  |
-|  [Netmiko and CLI Example for Interface Management](/PythonEksempler/netmiko-interface-example)  |  These are a series of python scripts for retrieving, creating, deleting a Loopback Interface with Python.  | 
-|  [MIB Walk with Python](/PythonEksempler/snmp_entity)  |  In this example, we perform a MIB walk against a device leveraging the “netsnmp” library for Python.  |
-|  [NETCONF Connection with Python](/PythonEksempler/netconf_entity)  |  This example shows the basics of connecting to a device with NETCONF using the  “ncclient” library for Python.  |
-|  [Configure Interface IP Address with RESTCONF](/PythonEksempler/restconf_update_ipaddress)  |  In this example the newly ratified RESTCONF standard is used to configure the IP Address on an interface.  |
-|  [Get Inventory from APIC-EM](/PythonEksempler/apic-em_get_inventory_stats)  |  APIC-EM maintains an inventory database of the entire network.  In this example Python is used to retrieve that information using the REST API.  |  
-|  [Get Host List from APIC-EM](/PythonEksempler/apic-em_get_hosts)  |  APIC-EM maintains a list of all clients connected to the network devices discovered by APIC-EM.  This example queries the APIC-EM for the list, and display’s it in a simple table.  |
-|  [Retrieve Tenants from ACI APIC](/PythonEksempler/acitoolkit_show_tenants)  |  This example leverages the ACI Toolkit to connect to an APIC controller and retrieve the list of Tenants configured.  |  
-|  [Basic NETCONF Get](/PythonEksempler/NC-get-config)  |  A basic ncclient example to `<get>` NETCONF Data  |
-|  [Basic NETCONF Edit](/PythonEksempler/NC-edit-config)  |  A basic ncclient example to `<edit-config>` NETCONF Data  |  
-|  [NETCONF XPATH Example](/PythonEksempler/NC-get-config-xpath)  |  Use the XPATH feature when making a NETCONF Requests  |  
-|  [Model Based AAA]/PythonEksempler(/model-based-aaa)  |  These example scripts are for Model Based AAA to get, edit and delete the rule-lists for privilege level users and Groups by using ietf-netconf-acm.yang data model  |
-|  [RESTCONF](/PythonEksempler/RESTCONF)  |  These example scripts are for RESTCONF to retrieve and configure the switch using different operations such as Get, Delete, Put, Post and Patch.  |
+|  [Netmiko og CLI Eksempel til Interface-styring](/PythonEksempler/netmiko-interface-example)  |  Disse er en række python-scripts til at hente, oprette, slette en Loopback-Interface med Python.  | 
+|  [MIB Walk med Python](/PythonEksempler/snmp_entity)  |  I dette eksempel udfører vi en MIB-walk mod en enhed ved hjælp af "netsnmp"-biblioteket til Python.  |
+|  [NETCONF Forbindelse med Python](/PythonEksempler/netconf_entity)  |  Dette eksempel viser det grundlæggende i at forbinde til en enhed med NETCONF ved hjælp af "ncclient"-biblioteket til Python.  |
+|  [Konfigurer Interface IP-adresse med RESTCONF](/PythonEksempler/restconf_update_ipaddress)  |  I dette eksempel bruges den nyere vedtagne RESTCONF-standard til at konfigurere IP-adressen på en grænseflade.  |
+|  [Hent Inventar fra APIC-EM](/PythonEksempler/apic-em_get_inventory_stats)  |  APIC-EM vedligeholder en inventardatabase over hele netværket. I dette eksempel bruges Python til at hente den information ved hjælp af REST API'en.  |  
+|  [Hent hostliste fra APIC-EM](/PythonEksempler/apic-em_get_hosts)  |  APIC-EM vedligeholder en liste over alle klienter, der er tilsluttet de netværksenheder, der er opdaget af APIC-EM. Dette eksempel forespørger APIC-EM for listen og viser den i en simpel tabel.  |
+|  [Hent Tenants  fra ACI APIC](/PythonEksempler/acitoolkit_show_tenants)  |  Dette eksempel udnytter ACI Toolkit til at oprette forbindelse til en APIC-controller og hente listen over konfigurerede Tenants.  |  
+|  [Grundlæggende NETCONF Hent](/PythonEksempler/NC-get-config)  |  Et grundlæggende ncclient-eksempel til `<get>` NETCONF Data  |
+|  [Grundlæggende NETCONF Rediger](/PythonEksempler/NC-edit-config)  |  Et grundlæggende ncclient-eksempel til `<edit-config>` NETCONF Data  |  
+|  [NETCONF XPATH Eksempel](/PythonEksempler/NC-get-config-xpath)  |  Brug XPATH-funktionen ved at foretage NETCONF-anmodninger  |  
+|  [Model Baseret AAA](/PythonEksempler/model-based-aaa)  |  Disse eksempelskripter er til Model Baseret AAA for at få, redigere og slette regellisterne for privilegieniveau-brugere og grupper ved at bruge ietf-netconf-acm.yang datamodel  |
+|  [RESTCONF](/PythonEksempler/RESTCONF)  |  Disse eksempelskripter er til RESTCONF til at h
