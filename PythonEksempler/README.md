@@ -25,12 +25,12 @@ Her er nogle Python-scripts, der kan interagere med netværkselementer ved hjæl
 |  Kodeeksempel  |  Beskrivelse  |
 |  --- |  ---  |
 |  [Netmiko og CLI Eksempel til Interface-styring](/PythonEksempler/netmiko-interface-example)  |  Disse er en række python-scripts til at hente, oprette, slette en Loopback-Interface med Python.  | 
-|  [MIB Gåtur med Python](/PythonEksempler/snmp_entity)  |  I dette eksempel udfører vi en MIB-gåtur mod en enhed ved hjælp af "netsnmp"-biblioteket til Python.  |
+|  [MIB Walk med Python](/PythonEksempler/snmp_entity)  |  I dette eksempel udfører vi en MIB-walk mod en enhed ved hjælp af "netsnmp"-biblioteket til Python.  |
 |  [NETCONF Forbindelse med Python](/PythonEksempler/netconf_entity)  |  Dette eksempel viser det grundlæggende i at forbinde til en enhed med NETCONF ved hjælp af "ncclient"-biblioteket til Python.  |
 |  [Konfigurer Interface IP-adresse med RESTCONF](/PythonEksempler/restconf_update_ipaddress)  |  I dette eksempel bruges den nyere vedtagne RESTCONF-standard til at konfigurere IP-adressen på en grænseflade.  |
 |  [Hent Inventar fra APIC-EM](/PythonEksempler/apic-em_get_inventory_stats)  |  APIC-EM vedligeholder en inventardatabase over hele netværket. I dette eksempel bruges Python til at hente den information ved hjælp af REST API'en.  |  
-|  [Hent Værtsliste fra APIC-EM](/PythonEksempler/apic-em_get_hosts)  |  APIC-EM vedligeholder en liste over alle klienter, der er tilsluttet de netværksenheder, der er opdaget af APIC-EM. Dette eksempel forespørger APIC-EM for listen og viser den i en simpel tabel.  |
-|  [Hent Lejere fra ACI APIC](/PythonEksempler/acitoolkit_show_tenants)  |  Dette eksempel udnytter ACI Toolkit til at oprette forbindelse til en APIC-controller og hente listen over konfigurerede lejere.  |  
+|  [Hent hostliste fra APIC-EM](/PythonEksempler/apic-em_get_hosts)  |  APIC-EM vedligeholder en liste over alle klienter, der er tilsluttet de netværksenheder, der er opdaget af APIC-EM. Dette eksempel forespørger APIC-EM for listen og viser den i en simpel tabel.  |
+|  [Hent Tenants  fra ACI APIC](/PythonEksempler/acitoolkit_show_tenants)  |  Dette eksempel udnytter ACI Toolkit til at oprette forbindelse til en APIC-controller og hente listen over konfigurerede Tenants.  |  
 |  [Grundlæggende NETCONF Hent](/PythonEksempler/NC-get-config)  |  Et grundlæggende ncclient-eksempel til `<get>` NETCONF Data  |
 |  [Grundlæggende NETCONF Rediger](/PythonEksempler/NC-edit-config)  |  Et grundlæggende ncclient-eksempel til `<edit-config>` NETCONF Data  |  
 |  [NETCONF XPATH Eksempel](/PythonEksempler/NC-get-config-xpath)  |  Brug XPATH-funktionen ved at foretage NETCONF-anmodninger  |  
