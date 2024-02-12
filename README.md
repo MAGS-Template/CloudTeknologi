@@ -3,7 +3,7 @@ Cloudteknologi er en valgfagspakke udbudt ved Mercantec. Vi kommer igennem konce
 
 Man kan se kurset her - [Notion CloudTeknologi](https://mercantec.notion.site/Cloudteknologi-IaC-a4c8815743bf43c58e97288f8d869d03?pvs=4)
 
-Vores repository her et støttende til kurset og indeholder 5 centrale mapper
+Vores repository her et støttende til kurset og indeholder 4 centrale mapper
 |  Mappe  |  Beskrivelse  |
 |  --- |  ---  |
 |  [Python](/Python)  | Her er eksempler både til basis Python og programmering, samt eksempler fra Cisco DevNet, hvor vi for forbindelse til vores udstyr med Python  |
